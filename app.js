@@ -26,7 +26,7 @@ app.get('/users', (req, res, next) => {
   connection.query(sql,(error, fields) => {
       res.send(fields)
     })
-  })
+  });
   
 
 app.listen(process.env.APP_PORT, () => {
