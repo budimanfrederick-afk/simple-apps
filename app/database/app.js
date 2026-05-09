@@ -6,9 +6,9 @@ const path = require('path')
 require('dotenv').config();
 
 // Import Middleware
-const logger = require('./middleware/logger')
+const logger = require('../middleware/logger')
 app.use(logger)
-const connection = require('./middleware/db_connect');
+const connection = require('../middleware/db_connect');
 
 // Dashboard
 app.use('/', express.static(path.join(__dirname, 'public')));
